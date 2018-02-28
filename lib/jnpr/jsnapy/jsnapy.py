@@ -658,6 +658,7 @@ class SnapAdmin:
                 user=username,
                 passwd=password,
                 gather_facts=False,
+                ssh_config="./ssh_config",
                 **kwargs)
             try:
                 dev.open()
